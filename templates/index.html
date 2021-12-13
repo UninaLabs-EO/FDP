@@ -1,81 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="static/css/bootstrap.min.css">
-     <link rel="stylesheet" href="static/css/myStyle.css">
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-     <title>FDP Trading</title>
-</head>
-<body>
-     {% include "header.html" %}
+{% extends "base.html" %}
+
+{% block content %}
 
 
+<!-- carousel -->
+ <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+     <div class="carousel-indicators">
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     </div>
+     <div class="carousel-inner">
+       <div class="carousel-item active" data-bs-interval="30000">
+          <img class="d-block w-100" alt="..." style="background-image: url(static/src/imgs/20-Fastest-Cars-FB.jpg);">
+         <div class="carousel-caption d-none d-md-block">
+           <h5>Ferrari Portofino</h5>
+           <p>A refined coupé-cabriolet that stands out for its 2+2 configuration.</p>
+         </div>
+       </div>
+       <div class="carousel-item" data-bs-interval="30000">
+     <img  class="d-block w-100" alt="..." style="background-image: url(static/src/imgs/67jAIjz.png);">
+         <div class="carousel-caption d-none d-md-block">
+           <h5>Audi R8 Spyder</h5>
+           <p>Some representative placeholder content for the second slide.</p>
+         </div>
+       </div>
+       <div class="carousel-item" data-bs-interval="30000">
+     <img  class="d-block w-100" alt="..." style="background-image: url(static/src/imgs/960x0.jpg);">
+         <div class="carousel-caption d-none d-md-block">
+           <h5>Audi RSQ3</h5>
+           <p>Some representative placeholder content for the third slide.</p>
+         </div>
+       </div>
+     </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Previous</span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden">Next</span>
+     </button>
 
-    <!-- carousel -->
-       
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" id="HeroCarou">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="static/src/imgs/20-Fastest-Cars-FB.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="static/src/imgs/67jAIjz.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="static/src/imgs/960x0.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        
+     <div class="carousel-text-block">
+          <p> Luxury Cars</p>
+     </div>
 
-    <!-- Quote -->
+   </div>
+<!-- end carousel -->
 
-        <figure class="text-end" id="main_quote">
-          <blockquote class="blockquote">
-            <p class="display-4">The cars we drive say a lot about us.</p>
-          </blockquote>
-          <figcaption class="blockquote-footer">
-            <cite title="Source Title">Alexandra Paul</cite>
-          </figcaption>
-        </figure>
-        
-
-        
-        
-        
-        
-        <div class="container-fluid">
-          
-          <p class="lead" style="margin-top: 5rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id, tempore fugit sunt expedita molestias, ut cum excepturi officiis quibusdam in error quasi dolores nam numquam, dignissimos quia corrupti vel!</p>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id, tempore fugit sunt expedita molestias, ut cum excepturi officiis quibusdam in error quasi dolores nam numquam, dignissimos quia corrupti vel!</p>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id, tempore fugit sunt expedita molestias, ut cum excepturi officiis quibusdam in error quasi dolores nam numquam, dignissimos quia corrupti vel!</p>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id, tempore fugit sunt expedita molestias, ut cum excepturi officiis quibusdam in error quasi dolores nam numquam, dignissimos quia corrupti vel!</p>
-          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id, tempore fugit sunt expedita molestias, ut cum excepturi officiis quibusdam in error quasi dolores nam numquam, dignissimos quia corrupti vel!</p>
-          
-        </div>
-        
-        {% include "footer.html" %}
-
-        
+   
 
 
+<!-- Quote -->
+<figure class="text-end" id="main_quote">
+<blockquote class="blockquote">
+     <p class="display-6">The cars we drive say a lot about us.</p>
+</blockquote>
+<figcaption class="blockquote-footer">
+     <cite title="Source Title">Alexandra Paul</cite>
+</figcaption>
+</figure>
+   
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="static/js/bootstrap.bundle.min.js" ></script>
-        
-      </body>
-      </html>
+<div class="row">
+     <div class="col-sm-4">
+          <h3>Titolo1</h3>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, accusantium quos quasi minus ratione dolorem, deleniti quisquam ullam quia adipisci nihil dicta distinctio aliquam, consequatur velit sit? Saepe, ratione unde.
+     </div>
+     <div class="col-sm-4">
+          <h3>Titolo2</h3>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, accusantium quos quasi minus ratione dolorem, deleniti quisquam ullam quia adipisci nihil dicta distinctio aliquam, consequatur velit sit? Saepe, ratione unde.
+     </div>
+     <div class="col-sm-4">
+          <h3>Titolo3</h3>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, accusantium quos quasi minus ratione dolorem, deleniti quisquam ullam quia adipisci nihil dicta distinctio aliquam, consequatur velit sit? Saepe, ratione unde.
+     </div>
+
+</div>
+   
+   
+   
+<div class="container-fluid">
+     
+     <p class="lead" style="margin-top: 5rem;">FDP trading provides its fleet of cars for any of your special events.</p>
+     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id, tempore fugit sunt expedita molestias, ut cum excepturi officiis quibusdam in error quasi dolores nam numquam, dignissimos quia corrupti vel!</p>
+     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id, tempore fugit sunt expedita molestias, ut cum excepturi officiis quibusdam in error quasi dolores nam numquam, dignissimos quia corrupti vel!</p>
+     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id, tempore fugit sunt expedita molestias, ut cum excepturi officiis quibusdam in error quasi dolores nam numquam, dignissimos quia corrupti vel!</p>
+     <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio id, tempore fugit sunt expedita molestias, ut cum excepturi officiis quibusdam in error quasi dolores nam numquam, dignissimos quia corrupti vel!</p>
+     
+</div>
+
+
+{% endblock content%}

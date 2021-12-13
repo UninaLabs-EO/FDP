@@ -1,13 +1,45 @@
 
-
-
-
-
-#main_navbar {
-     background-color: #FF4500 !important;
-     margin-bottom: 500px !important;
+/* Carousel */
+.d-block {
+     height: 600px;
+     background-size: cover;
+     background-position: center center;
 }
 
+.carousel-text-block {
+     z-index: 100;
+     position: absolute;
+     color: black;
+     font-size: 48px;
+     -webkit-text-stroke: 1px white;
+     font-weight: 900;
+     left: auto;
+     top: 10px;
+}
+
+/* NAVBAR */
+
+.nav-link {
+     font-weight: bold;
+}
+
+#main_navbar {
+     /* background-color: #FF4500 !important; */
+     background: linear-gradient(to bottom, #ff6600 0%, #ff0000 100%);
+     margin-bottom: 500px !important;
+     border-bottom: 3px solid gray;
+}
+
+#navbarDropdown {
+     border:1.5px solid black;
+     color: white;
+     border-radius: 15px;
+     /* font-weight: bold; */
+     background-color: #363945;
+
+}
+
+/* Quotation */
 #main_quote {
      margin-right: 50px;
 }
@@ -15,4 +47,9 @@
 .lead {
      margin-left: 50px;
      margin-right: 50px;
+}
+
+elemento {
+     min-height: 600px !important;
+
 }
