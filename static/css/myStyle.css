@@ -74,25 +74,7 @@
    }
 
 
-/* Quotation */
-#main_quote {
-  position: absolute;
-  bottom: 300px;
-  right: 10px;
-}
 
-@media only screen and (max-width: 600px) {
-     #main_quote {
-       display: none
-     }
-
-   }
-
-
-#AlexandraPaul {
-     font-size: 12pt;
-
-}
 
 
 .lead {
@@ -167,10 +149,10 @@ elemento {
 
 #logowhite {
      width: 55%; 
-     max-width: 700px;
+     max-width: 500px;
 
      position: absolute;
-     bottom: 255px;
+     bottom: 200px;
      margin: auto;
      left: 0;
      right: 0;
@@ -179,7 +161,7 @@ elemento {
      color: white;
      display: block;
      width: 83%;
-     font-size: 5vw;
+     font-size: 3vw;
      font-family: europa,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
      font-weight: 700;
      letter-spacing: .01em;
@@ -202,7 +184,7 @@ elemento {
      color: white;
      display: block;
      width: 83%;
-     font-size: 3vw;
+     font-size: 2vw;
      font-family: europa,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
      font-weight: 700;
      text-align: center;
@@ -271,7 +253,6 @@ elemento {
      width: 100vw;
 
      overflow-anchor: none; 
-     border: 1px solid red;
 
      position: relative;
      bottom: 100px;
